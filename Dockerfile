@@ -10,9 +10,7 @@ RUN go mod download
 
 # Copy the source code
 COPY *.go .
-RUN /bin/sh -c go get github.com/distrotion/gql-no-db/graph
-RUN /bin/sh -c go get github.com/distrotion/gql-no-db/graph/generated
-RUN /bin/sh -c go get github.com/distrotion/gql-no-db/internal/auth
+
 # Build
 RUN go build -o /gql-no-db
 
