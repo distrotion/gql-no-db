@@ -12,6 +12,7 @@ RUN go mod download
 COPY server.go .
 
 # Build
+RUN go get github.com/go-chi/chi@v3.3.2+incompatible
 RUN go build -o /minefit_auth
 
 # This is for documentation purposes only.
