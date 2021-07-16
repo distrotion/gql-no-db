@@ -12,7 +12,7 @@ RUN go mod download
 COPY server.go .
 
 # Build
-RUN go build -o /gql-no-db
+RUN go build -o /minefit_auth
 
 # This is for documentation purposes only.
 # To actually open the port, runtime parameters
