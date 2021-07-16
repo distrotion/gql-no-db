@@ -12,7 +12,6 @@ RUN go mod download
 COPY *.go .
 
 # Build
-RUN go get github.com/go-chi/chi@v3.3.2+incompatible
 RUN go build -o /gql-no-db
 
 # This is for documentation purposes only.
