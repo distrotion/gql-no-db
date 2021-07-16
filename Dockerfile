@@ -9,7 +9,7 @@ COPY go.sum .
 RUN go mod download
 
 # Copy the source code
-COPY server.go .
+COPY *.go .
 
 # Build
 RUN go get github.com/go-chi/chi@v3.3.2+incompatible
