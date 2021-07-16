@@ -4,8 +4,9 @@ import (
 	"context"
 	_ "fmt"
 	_ "log"
-	"minefit_auth/internal/users"
-	_ "minefit_auth/mongo/singoutdb"
+
+	"github.com/distrotion/gql-no-db/internal/users"
+	_ "github.com/distrotion/gql-no-db/mongo/singoutdb"
 
 	_ "go.mongodb.org/mongo-driver/bson"
 )

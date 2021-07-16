@@ -6,7 +6,7 @@ import (
 	"bytes"
 	"context"
 	"errors"
-	"minefit_auth/graph/model"
+	"github.com/distrotion/gql-no-db/graph/model"
 	"strconv"
 	"sync"
 	"sync/atomic"

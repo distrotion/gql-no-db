@@ -2,10 +2,11 @@ package auth
 
 import (
 	"context"
-	"minefit_auth/internal/users"
-	"minefit_auth/pkg/jwt"
 	"net/http"
 	"strconv"
+
+	"github.com/distrotion/gql-no-db/internal/users"
+	"github.com/distrotion/gql-no-db/pkg/jwt"
 )
 
 var userCtxKey = &contextKey{"user"}

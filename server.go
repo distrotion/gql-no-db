@@ -2,11 +2,12 @@ package main
 
 import (
 	"log"
-	"minefit_auth/graph"
-	"minefit_auth/graph/generated"
-	"minefit_auth/internal/auth"
 	"net/http"
 	"os"
+
+	"github.com/distrotion/gql-no-db/graph"
+	"github.com/distrotion/gql-no-db/graph/generated"
+	"github.com/distrotion/gql-no-db/internal/auth"
 
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"

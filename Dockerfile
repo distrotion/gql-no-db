@@ -13,7 +13,7 @@ COPY *.go .
 
 # Build
 RUN go get github.com/go-chi/chi@v3.3.2+incompatible
-RUN go build -o /minefit_auth
+RUN go build -o /gql-no-db
 
 # This is for documentation purposes only.
 # To actually open the port, runtime parameters
@@ -27,4 +27,4 @@ EXPOSE 9100
 #ENV HTTP_PORT=8081
 
 # Run
-CMD [ "/docker-gs-ping" ]
+CMD [ "/gql-no-db" ]

@@ -6,10 +6,11 @@ package graph
 import (
 	"context"
 	"fmt"
-	"minefit_auth/graph/generated"
-	"minefit_auth/graph/model"
-	"minefit_auth/internal/linksignout"
-	"minefit_auth/internal/users"
+
+	"github.com/distrotion/gql-no-db/graph/generated"
+	"github.com/distrotion/gql-no-db/graph/model"
+	"github.com/distrotion/gql-no-db/internal/linksignout"
+	"github.com/distrotion/gql-no-db/internal/users"
 )
 
 func (r *mutationResolver) CreateSignout(ctx context.Context, input model.NewSignout) (*model.LinkSignout, error) {

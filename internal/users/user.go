@@ -4,8 +4,9 @@ import (
 	"context"
 	"fmt"
 	_ "log"
-	_ "minefit_auth/mongo/maindb"
 	_ "strconv"
+
+	_ "github.com/distrotion/gql-no-db/mongo/maindb"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"golang.org/x/crypto/bcrypt"

@@ -1,4 +1,4 @@
-module minefit_auth
+module github.com/distrotion/gql-no-db
 
 go 1.16
 
