@@ -9,7 +9,8 @@ COPY go.sum .
 RUN go mod download
 
 # Copy the source code
-COPY *.go .
+
+COPY * .
 
 # Build
 RUN go build -o /gql-no-db
